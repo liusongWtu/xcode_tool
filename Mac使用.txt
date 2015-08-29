@@ -11,3 +11,7 @@
 #删除查找到的文件：find ./ -name "*.php" -print -exec rm -fr {} \;
 #反编译：./d2j-dex2jar.sh classes.dex
 
+3.自动更新并提交xcode_tool下的内容脚本：Shells/update-git-repos.sh文件
+1）定时任务文件位置：/Users/song/Library/LaunchAgents/com.liu.autoUpdateGit.plist
+2) 执行时间：每周一上午11：30
+3）执行Log位置 

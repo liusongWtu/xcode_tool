@@ -3,7 +3,7 @@ REPO_DIR=~/ios/ #资料库所在目录
 REPOS=(xcode_tool ) # 要定期更新资料库列表，用空格分隔
 GIT_OPTS=("pull" "add -A" "commit -m'自动提交'" "push") #git 要执行的指令
 RETRY_INT=60
-LOG_FILE=~/Documents/MyLog/.update_git.log
+LOG_FILE=~/Documents/MyLog/update_git.log
 
 function fetch_git_reops {
     for r in "${REPOS[@]}"
