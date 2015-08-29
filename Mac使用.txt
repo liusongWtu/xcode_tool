@@ -10,3 +10,5 @@
 #终端显示所有文件：ls -ah
 #删除查找到的文件：find ./ -name "*.php" -print -exec rm -fr {} \;
 #反编译：./d2j-dex2jar.sh classes.dex
+
+3.
