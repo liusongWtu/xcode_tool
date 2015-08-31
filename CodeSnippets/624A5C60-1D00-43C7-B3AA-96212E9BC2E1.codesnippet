@@ -3,25 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ls_label</string>
+	<string>ls_dispatch_after</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UILabel *&lt;#label#&gt;=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
-    [&lt;#label#&gt; setBackgroundColor:[UIColor redColor]];
-&lt;#label#&gt;.font = [UIFont systemFontOfSize:&lt;#size#&gt;];
-[&lt;#label#&gt; setText:&lt;#text#&gt;];
-    [self addSubview:&lt;#label#&gt;];</string>
+	<string>    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"2秒后执行");
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4A93C65B-FD8D-456B-B692-9D1D271F14AD</string>
+	<string>624A5C60-1D00-43C7-B3AA-96212E9BC2E1</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>ls_label</string>
+	<string>ls_dispatch_after</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UILabel</string>
+	<string>dispatch_after</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
