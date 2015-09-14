@@ -1,0 +1,28 @@
+https://github.com/glock45/iOS-Hierarchy-Viewer
+
+
+download newest version of library from releases section Lib or use it as cocoapods spec
+add these files to your project (drag&drop into xCode project)
+make sure that you have added “-ObjC -all_load” to “other linker flags” (click at project root element, select “Build settings” tab, search for “other linker flags”)
+if you already have JSONKit.m file in your project, please remove it because of linker conflict We switched to Apple's NSJSONSerialization so skip this step.
+add QuartzCore to frameworks list
+launch hierarchy viewer in your code by calling [iOSHierarchyViewer start];. The best place for it is AppDelegate::applicationDidBecomeActive callback
+find or get from logs device/simulator ip address and go to ‘http://[ip_address]:9449′ address (Chrome/Firefox only)
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    // your stuff
+    [iOSHierarchyViewer start];    
+}
+If you would like to see data from Core Data API:
+
+add CoreData to frameworks list
+go to 'http://[ip_address]:9449/core.html' and add NSManagedContext object to iOSHierarchyViewer library
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    // your stuff
+
+    setup persistent store coordinator for _managedObjectContext
+
+    [iOSHierarchyViewer addContext:_managedObjectContext name:@"Root managed context"];    
+}
+You can always look at sample project, there is only 1 line of code needed for iOSHierarchyViewer to work with your project. We really like PrettyKit ( https://github.com/vicpenap/PrettyKit ), so we just enabled our hierarchy viewer in their sample project. If you don't know what PrettyKit is you need to check it out!

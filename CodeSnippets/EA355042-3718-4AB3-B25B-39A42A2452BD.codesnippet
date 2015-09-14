@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ls_label_color</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    NSString *totalMonneyStr=[NSString stringWithFormat:@"总计:￥%.2f",2.2f];
+    [label setText:totalMonneyStr];
+    NSMutableAttributedString *text =
+    [[NSMutableAttributedString alloc]
+     initWithAttributedString:label.attributedText];
+    [text addAttribute:NSForegroundColorAttributeName
+                 value:kGreenFontColor
+                 range:NSMakeRange(3, totalMonneyStr.length-3)];
+    [label setAttributedText: text];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>EA355042-3718-4AB3-B25B-39A42A2452BD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>ls_label_color</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>label_with_different_color</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
