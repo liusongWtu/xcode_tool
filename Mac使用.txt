@@ -15,3 +15,5 @@
 1）定时任务文件位置：/Users/song/Library/LaunchAgents/com.liu.autoUpdateGit.plist
 2) 执行时间：每周一上午11：30
 3）执行Log位置 /Users/song/Documents/MyLog
+
+test
